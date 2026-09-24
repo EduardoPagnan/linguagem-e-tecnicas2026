@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    int a, b;
+    
+    // Lendo os dois valores
+    scanf("%d", &a);	
+    scanf("%d", &b);
+    
+    // Imprimindo em ordem inversa
+    printf("%d %d\n", b, a);
+    
+    // Verificando se 'a' ou 'b' são diferentes de zero (verdadeiro)
+    if (b || a) {	
+        printf("ordem inversa\n");
+    } else {
+        // Opcional: o que acontece se a condição acima for falsa (ou seja, se ambos forem 0)
+        printf("ambos sao zero\n");
+    }
+
+    return 0;
+}
