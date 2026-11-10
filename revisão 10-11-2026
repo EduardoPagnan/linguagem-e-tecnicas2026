@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* FAÇA UM ALGORITIMO PARA ARMAZENAR A NOTA BIMESTRAL DE UM TOTAL DE 10 ALUNOS
+AO FINAL SOLICITE QUAL O ALUNO O USUÁRUIO DESEJA QUE A NOTA SEJA APRESNTADA */
+
+int main(int argc, char *argv[]) {
+	
+	int vet_notas[10];
+	int i, num;
+	
+	printf ("CADASTRE AS NOTAS DOS ALUNOS:\n");
+	
+	for (i=0;  i<10; i++) scanf ("%d", & vet_notas [i]);
+	system ("cls");
+	
+	
+	
+	printf ("qual nota deseja ver (Numero do Aluno)?");
+	scanf ("%d", &num);
+	if (num >=0 && num < 10) printf ("%d", vet_notas[num]);
+	else printf ("NOTA NÃO CADASTRADA");
+	
+	return 0;
+	
+	
